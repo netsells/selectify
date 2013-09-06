@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Select</title>
+
+        <!-- CSS -->
+        <style>
+            body {
+                background-color: #191919;
+                font-family: 'Helvetica Neue';
+                font-weight: 200;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/selectify.css" />
+
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="./js/selectify.jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <select name="drink" data-width="250">
+                <option disabled>Select a drink</option>
+                <option selected>Latte</option>
+                <option>Espresso</option>
+                <option>Americano</option>
+                <option>Tea</option>
+            </select>
+        </div>
+
+        <select name="food">
+            <option>Select some food</option>
+            <option>Cookies</option>
+            <option>Cake</option>
+            <option>Burger</option>
+        </select>
+
+        <script>
+            $('select').selectify({
+                arrowCharacter: '<div class="icon-chevron-down"></div>'
+            });
+        </script>
+    </body>
+</html>

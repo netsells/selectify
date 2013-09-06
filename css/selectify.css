@@ -1,0 +1,43 @@
+.selectifyContainer {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.selectifyContainer.active {
+  z-index: 1000;
+}
+.selectifyContainer.blurring {
+  z-index: 999;
+}
+.selectifyContainer .currentItem {
+  cursor: pointer;
+  line-height: 40px;
+  background-color: #42628C;
+  color: #FFF;
+  padding: 0 15px;
+  position: relative;
+}
+.selectifyContainer .currentItem .arrowContainer {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 40px;
+  text-align: center;
+  background-color: #344E71;
+}
+.selectifyContainer ol {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  background-color: #FFF;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 5px;
+}
+.selectifyContainer ol li {
+  line-height: 30px;
+  cursor: pointer;
+  padding: 0 15px;
+}
